@@ -3,8 +3,8 @@
   --glass2: rgba(0,0,0,.35);
   --stroke: rgba(255,255,255,.20);
 
-  --text: #b30000;   /* vermelho escuro */
-  --accent: #b30000; /* vermelho escuro */
+  --text: #ffffff;   /* branco */
+  --accent: #ffffff; /* número também branco */
 }
 
 *{ box-sizing:border-box; }
@@ -19,21 +19,21 @@ html, body{
 
 /* Caixa mais larga para aparecer ao centro */
 #callBox{
-  width: 520px;
-  padding: 26px 32px;
+  width: 650px;
+  padding: 30px 40px;
   border-radius: 26px;
 
   background: linear-gradient(180deg, var(--glass), var(--glass2));
   border: 2px solid var(--stroke);
 
   box-shadow:
-    0 0 22px rgba(255,138,0,.35),
-    0 0 55px rgba(255,138,0,.25);
+    0 0 22px rgba(255,255,255,.25),
+    0 0 55px rgba(255,255,255,.15);
 
   display:flex;
   flex-direction:column;
   align-items:center;
-  gap: 14px;
+  gap: 18px;
 
   animation: fadeIn 0.8s ease-out forwards;
   opacity: 0;
@@ -41,14 +41,14 @@ html, body{
 
 /* Ícone */
 .icon{
-  font-size: 34px;
-  margin-right: 10px;
+  font-size: 40px;
+  margin-right: 12px;
   vertical-align: middle;
 }
 
 /* Título */
 #callTitle{
-  font-size: 38px;
+  font-size: 42px;
   font-weight: 900;
   letter-spacing: 3px;
   color: var(--text);
@@ -58,9 +58,13 @@ html, body{
   justify-content:center;
 }
 
-/* Número */
+.titleText{
+  color: var(--text);
+}
+
+/* Número numa linha só */
 #callNumber{
-  font-size: 64px;
+  font-size: 72px;
   font-weight: 900;
   letter-spacing: 4px;
   color: var(--accent);
