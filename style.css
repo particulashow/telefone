@@ -3,8 +3,8 @@
   --glass2: rgba(0,0,0,.35);
   --stroke: rgba(255,255,255,.20);
 
-  --text: #ffffff;
-  --accent: #ff8a00;
+  --text: #b30000;   /* vermelho escuro */
+  --accent: #b30000; /* vermelho escuro */
 }
 
 *{ box-sizing:border-box; }
@@ -17,42 +17,52 @@ html, body{
   overflow:hidden;
 }
 
-/* Caixa compacta para canto da live */
+/* Caixa mais larga para aparecer ao centro */
 #callBox{
-  width: 380px;
-  padding: 20px 24px;
-  border-radius: 22px;
+  width: 520px;
+  padding: 26px 32px;
+  border-radius: 26px;
 
   background: linear-gradient(180deg, var(--glass), var(--glass2));
   border: 2px solid var(--stroke);
 
   box-shadow:
-    0 0 18px rgba(255,138,0,.35),
-    0 0 40px rgba(255,138,0,.25);
+    0 0 22px rgba(255,138,0,.35),
+    0 0 55px rgba(255,138,0,.25);
 
   display:flex;
   flex-direction:column;
   align-items:center;
-  gap: 10px;
+  gap: 14px;
 
   animation: fadeIn 0.8s ease-out forwards;
   opacity: 0;
 }
 
+/* Ícone */
+.icon{
+  font-size: 34px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
 /* Título */
 #callTitle{
-  font-size: 32px;
+  font-size: 38px;
   font-weight: 900;
   letter-spacing: 3px;
   color: var(--text);
   text-align:center;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 /* Número */
 #callNumber{
-  font-size: 48px;
+  font-size: 64px;
   font-weight: 900;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
   color: var(--accent);
   text-align:center;
 
